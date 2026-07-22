@@ -8,7 +8,7 @@ The Pillow deals no damage. Instead, hitting a living entity with it sends them 
 
 ## Crafting
 
-Combine 3 White Carpet and 6 Feathers in a shaped recipe (carpet on top, feathers filling the rest). The recipe is automatically unlocked in the recipe book when you pick up a Feather.
+Combine 3 Carpet (any colour) and 6 Feathers in a shaped recipe (carpet on top, feathers filling the rest). The recipe is automatically unlocked in the recipe book when you pick up a Feather.
 
 ## Modpack Permissions
 

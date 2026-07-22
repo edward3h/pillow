@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "c": {
-      "item": "minecraft:white_carpet"
+      "tag": "minecraft:wool_carpets"
     },
     "f": {
       "item": "minecraft:feather"
