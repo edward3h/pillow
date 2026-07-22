@@ -36,7 +36,7 @@ Combine 3 Carpet (any colour) and 6 Feathers in a shaped recipe (carpet on top, 
 
 ## Credits
 
-Ported from the original Pillow Bedrock addon, made by edward3h and his son.
+Ported from the original Pillow Bedrock addon, made by edward3h and [foxgames1](https://github.com/foxgames1).
 
 ## Licence
 
