@@ -1,0 +1,10 @@
+.worktrees/
+build/
+.gradle/
+logs/
+runs/
+.env
+
+supertool
+fabric/run
+.serena

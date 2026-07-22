@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "pillow",
+  "version": "${mod_version}",
+  "name": "Pillow",
+  "description": "Adds the Pillow, a joke melee weapon that knocks back and heals whatever it hits instead of damaging it.",
+  "authors": ["edward3h"],
+  "license": "Apache-2.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.ethelred.pillow.fabric.PillowFabric"
+    ]
+  },
+  "mixins": [
+    "pillow.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "fabric-api": "*"
+  }
+}

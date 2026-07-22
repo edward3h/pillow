@@ -1,0 +1,36 @@
+plugins {
+    id 'me.modmuss50.mod-publish-plugin' version '2.1.0'
+    id 'co.uzzu.dotenv.gradle' version '4.0.0'
+}
+
+publishMods {
+    changelog = {
+        def cl = findProperty('changelog') ?: env.fetchOrNull('CHANGELOG')
+        if (!cl && gradle.startParameter.taskNames.any { it.toLowerCase().contains('publish') }) {
+            throw new GradleException('Provide a changelog via -Pchangelog="..." or the CHANGELOG environment variable')
+        }
+        cl ?: ''
+    }()
+    type = STABLE
+
+    github {
+        accessToken = env.fetchOrNull("GITHUB_TOKEN")
+        repository = github_repo
+        commitish = "main"
+        tagName = "v${mod_version}+${minecraft_version}"
+        allowEmptyFiles = true
+    }
+}
+
+// Root build — repositories only; each subproject applies its own platform plugin
+allprojects {
+    version = "${rootProject.mod_version}+${rootProject.minecraft_version}"
+}
+
+subprojects {
+    repositories {
+        maven { url = 'https://maven.neoforged.net/releases' }
+        maven { url = 'https://maven.fabricmc.net/' }
+        mavenCentral()
+    }
+}

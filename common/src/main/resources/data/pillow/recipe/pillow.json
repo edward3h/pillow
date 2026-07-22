@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "c": {
+      "item": "minecraft:white_carpet"
+    },
+    "f": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "ccc",
+    "fff",
+    "fff"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pillow:pillow"
+  }
+}

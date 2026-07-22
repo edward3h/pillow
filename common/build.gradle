@@ -1,0 +1,30 @@
+plugins {
+    id 'fabric-loom' version '1.7.+'
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
+
+dependencies {
+    // MC via Fabric Loom — provides Minecraft classes on compile and test classpaths.
+    // Both NeoForge and Fabric use Mojang official mappings, so the compiled bytecode
+    // is compatible with both platforms.
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.officialMojangMappings()
+
+    // Fabric Loader is provided at runtime by the platform — compile-time type access only.
+    compileOnly "net.fabricmc:fabric-loader:${fabric_loader_version}"
+
+    // SpongePowered Mixin (Fabric's fork) for the @Mixin classes in common's mixin package.
+    // Provided at runtime by both Fabric Loader and NeoForge — compile-time only here.
+    compileOnly "net.fabricmc:sponge-mixin:0.15.4+mixin.0.8.7"
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testImplementation 'org.mockito:mockito-core:5.8.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}

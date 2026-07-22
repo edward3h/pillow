@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "${neoforge_loader_version_range}"
+license = "Apache-2.0"
+
+[[mods]]
+modId = "pillow"
+version = "${mod_version}"
+displayName = "Pillow"
+description = "Adds the Pillow, a joke melee weapon that knocks back and heals whatever it hits instead of damaging it."
+
+[[mixins]]
+config = "pillow.mixins.json"
+
+[[dependencies.pillow]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoforge_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.pillow]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
