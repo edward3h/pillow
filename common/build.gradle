@@ -20,7 +20,7 @@ dependencies {
     // Provided at runtime by both Fabric Loader and NeoForge — compile-time only here.
     compileOnly "net.fabricmc:sponge-mixin:0.15.4+mixin.0.8.7"
 
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.14.4'
     testImplementation 'org.mockito:mockito-core:5.8.0'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
