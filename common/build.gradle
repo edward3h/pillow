@@ -18,7 +18,7 @@ dependencies {
 
     // SpongePowered Mixin (Fabric's fork) for the @Mixin classes in common's mixin package.
     // Provided at runtime by both Fabric Loader and NeoForge — compile-time only here.
-    compileOnly "net.fabricmc:sponge-mixin:0.15.4+mixin.0.8.7"
+    compileOnly "net.fabricmc:sponge-mixin:0.17.4+mixin.0.8.7"
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
     testImplementation 'org.mockito:mockito-core:5.8.0'
